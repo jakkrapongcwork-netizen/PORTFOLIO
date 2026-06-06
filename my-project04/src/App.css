@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* WelcomePage */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Section01 */
+@keyframes revealOpen {
+  from {
+    clip-path: inset(0 50% 0 50%);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0 0% 0 0%);
+    opacity: 1;
+  }
+}
+
+.reveal-open {
+  animation: revealOpen 1.2s ease-out forwards;
+}
